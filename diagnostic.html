@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🔍 Diagnostic GitHub Pages</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            min-height: 100vh;
+        }
+        .container {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 30px;
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 2.5em;
+            color: #ffd700;
+        }
+        .section {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+            border-left: 4px solid #ffd700;
+        }
+        .error {
+            background: rgba(239, 68, 68, 0.2);
+            border-left-color: #ef4444;
+        }
+        .success {
+            background: rgba(34, 197, 94, 0.2);
+            border-left-color: #22c55e;
+        }
+        .warning {
+            background: rgba(245, 158, 11, 0.2);
+            border-left-color: #f59e0b;
+        }
+        .button {
+            display: inline-block;
+            background: #22c55e;
+            color: white;
+            padding: 12px 24px;
+            text-decoration: none;
+            border-radius: 8px;
+            margin: 10px 5px;
+            transition: all 0.3s ease;
+            font-weight: bold;
+        }
+        .button:hover {
+            background: #16a34a;
+            transform: translateY(-2px);
+        }
+        .button.error {
+            background: #ef4444;
+        }
+        .button.error:hover {
+            background: #dc2626;
+        }
+        .checklist {
+            background: rgba(0, 0, 0, 0.2);
+            padding: 15px;
+            border-radius: 8px;
+            margin: 10px 0;
+        }
+        .checklist li {
+            margin: 8px 0;
+            padding-left: 20px;
+            position: relative;
+        }
+        .checklist li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #22c55e;
+            font-weight: bold;
+        }
+        .checklist li.error:before {
+            content: "✗";
+            color: #ef4444;
+        }
+        .checklist li.warning:before {
+            content: "⚠";
+            color: #f59e0b;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🔍 Diagnostic GitHub Pages</h1>
+        
+        <div class="section success">
+            <h2>✅ Fichiers présents</h2>
+            <p>Les fichiers suivants sont bien présents dans la branche gh-pages :</p>
+            <ul class="checklist">
+                <li>index.html (fichier principal)</li>
+                <li>simple.html (fichier de test)</li>
+                <li>test.html (fichier de test)</li>
+                <li>.nojekyll (fichier de configuration)</li>
+                <li>Dossier _next/ (ressources Next.js)</li>
+                <li>Dossier images/ (images du site)</li>
+            </ul>
+        </div>
+        
+        <div class="section warning">
+            <h2>⚠️ Configuration GitHub Pages</h2>
+            <p>Vérifiez que GitHub Pages est correctement configuré :</p>
+            <ol class="checklist">
+                <li>Allez sur <a href="https://github.com/Meserigne/Tradelog360LTD/settings/pages" class="button">Paramètres GitHub Pages</a></li>
+                <li>Dans "Source", sélectionnez "Deploy from a branch"</li>
+                <li>Choisissez la branche "gh-pages"</li>
+                <li>Laissez le dossier "/(root)"</li>
+                <li>Cliquez sur "Save"</li>
+            </ol>
+        </div>
+        
+        <div class="section">
+            <h2>🔗 URLs à tester</h2>
+            <p>Testez ces URLs pour diagnostiquer le problème :</p>
+            <div style="text-align: center; margin: 20px 0;">
+                <a href="https://meserigne.github.io/Tradelog360LTD" class="button">Site Principal</a>
+                <a href="https://meserigne.github.io/Tradelog360LTD/simple.html" class="button">Test Simple</a>
+                <a href="https://meserigne.github.io/Tradelog360LTD/test.html" class="button">Test Basique</a>
+            </div>
+        </div>
+        
+        <div class="section error">
+            <h2>❌ Problèmes possibles</h2>
+            <ul class="checklist">
+                <li class="error">GitHub Pages non activé dans les paramètres</li>
+                <li class="error">Mauvaise branche sélectionnée (doit être gh-pages)</li>
+                <li class="error">Délai de déploiement (peut prendre 5-10 minutes)</li>
+                <li class="warning">Fichier index.html trop complexe pour GitHub Pages</li>
+                <li class="warning">Problème de cache du navigateur</li>
+            </ul>
+        </div>
+        
+        <div class="section">
+            <h2>🛠️ Solutions</h2>
+            <div style="text-align: center; margin: 20px 0;">
+                <a href="https://github.com/Meserigne/Tradelog360LTD/settings/pages" class="button">Configurer GitHub Pages</a>
+                <a href="https://github.com/Meserigne/Tradelog360LTD/actions" class="button">Voir les Actions</a>
+                <a href="https://github.com/Meserigne/Tradelog360LTD/branches" class="button">Vérifier les Branches</a>
+            </div>
+        </div>
+        
+        <div class="section success">
+            <h2>📞 Support</h2>
+            <p>Si le problème persiste, vérifiez :</p>
+            <ul class="checklist">
+                <li>Les paramètres GitHub Pages</li>
+                <li>Les logs des Actions GitHub</li>
+                <li>Le statut de la branche gh-pages</li>
+                <li>Les erreurs dans la console du navigateur</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
