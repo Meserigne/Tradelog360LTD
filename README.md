@@ -4,7 +4,7 @@ Ce projet est un site web corporatif moderne développé avec Next.js.
 
 ## 🚀 Déploiement
 
-Ce site est déployé sur GitHub Pages et accessible à l'adresse : [https://votre-username.github.io/votre-repo](https://votre-username.github.io/votre-repo)
+Ce site est déployé sur GitHub Pages et accessible à l'adresse : [https://meserigne.github.io/Tradelog360LTD](https://meserigne.github.io/Tradelog360LTD)
 
 ## 📁 Structure du Projet
 
@@ -22,8 +22,8 @@ Ce site est déployé sur GitHub Pages et accessible à l'adresse : [https://vot
 
 1. Clonez le dépôt :
 ```bash
-git clone https://github.com/votre-username/votre-repo.git
-cd votre-repo
+git clone https://github.com/Meserigne/Tradelog360LTD.git
+cd Tradelog360LTD
 ```
 
 2. Lancez le serveur local :
